@@ -21,6 +21,13 @@ config PMW3610_SMART_ALGORITHM
     The algorithm is used to extend the tracking acrocss a wider range of surfaces
     such as graniles and tiles.
 
+config PMW3610_ALT_INIT_POWER_UP_EXTRA_DELAY_MS
+  int "Extra power up init delay (ms)"
+  default 0
+  help
+    Default minimum init power up delay is 10ms.
+    Use this config to postpone init power up sequence if needs longer bootup time.
+
 config PMW3610_CPI
     int "PMW3610's default CPI"
     default 800
